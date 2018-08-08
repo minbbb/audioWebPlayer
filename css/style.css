@@ -1,0 +1,74 @@
+.loading{
+	max-width: 100%;
+	display:flex;
+	align-self: center;
+}
+#wrapper{
+	margin: 120px auto 0;
+}
+.track-name-and-player{
+	position: fixed;
+	z-index: 10;
+	top: 0;
+	padding-top: 10px;
+	background-color: #fff;
+}
+.audiojs{
+	border-radius: .25rem;
+}
+.progress{
+	border-radius: 0;
+}
+.icon{
+	margin-right: 7px;
+}
+.up{
+	height: 40px;
+	background-image: url("../img/arrow_up.png");
+	background-repeat: space no-repeat;
+	background-position: center center;
+}
+.btn-track-info{
+	padding: 0 4px 4px;
+}
+#track-info{
+	display: none;
+	border-top: 1px dashed #444444;
+}
+.btn-track-to-folder{
+	padding: 0 4px 4px;
+}
+.play-pause{
+	display: none;
+}
+.playerBtns{
+	display: flex;
+	justify-content: center;
+}
+.playerBtns button{
+	display: flex;
+}
+.list-group-item:hover + .searchItem{
+	background-color: #f8f9fa;
+}
+.selectionPlayTrack, .selectionSort, .selectionPlayTrack + .searchItem{
+	background-color: rgb(254, 247, 109);
+}
+.selectionPlayTrack:hover, .selectionSort:hover, .selectionPlayTrack:hover + .searchItem{
+	background-color: rgb(255, 251, 180);
+}
+.menuPage{
+	display: none;
+	margin-bottom: 20px;
+}
+.menuSort{
+	display: none;
+	margin-top: 10px;
+}
+.pathOfPlayingFile{
+	display: none;
+}
+.searchItem{
+	padding-top: 0;
+	padding-bottom: 0;
+}
