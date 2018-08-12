@@ -4,8 +4,6 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 	<link rel="stylesheet" href="components/bootstrap/bootstrap.min.css"/>
-	<link rel="stylesheet" href="components/fontawesome/css/solid.min.css"/>
-	<link rel="stylesheet" href="components/fontawesome/css/fontawesome.min.css"/>
 	<link rel="stylesheet" href="css/style.css"/>
 	<script src="components/jquery/jquery-3.3.1.min.js"></script>
 	<script src="components/bootstrap/bootstrap.min.js"></script>
@@ -19,10 +17,10 @@
 		<div id="track-info"></div>
 		<audio id="player" preload="auto"></audio>
 		<div class="playerBtns">
-			<button type="button" onclick="openMenu()" class="btn btn-dark menuBtn"><i class="fas fa-ellipsis-h"></i></button>
-			<button type="button" onclick="previousTrack()" class="btn btn-dark"><i class="fas fa-angle-double-left"></i></button>
-			<button type="button" onclick="playPause()" class="btn btn-dark playPauseBtn"><i class="fas fa-play"></i></button>
-			<button type="button" onclick="nextTrack()" class="btn btn-dark"><i class="fas fa-angle-double-right"></i></button>
+			<button type="button" onclick="openMenu()" class="btn btn-dark menuBtn"><img src="img/fontawesome/ellipsis-h.svg" alt="Menu" class="menuIcon"/></button>
+			<button type="button" onclick="previousTrack()" class="btn btn-dark"><img src="img/fontawesome/angle-double-left.svg" alt="Previous track" class="menuIcon"/></button>
+			<button type="button" onclick="playPause()" class="btn btn-dark playPauseBtn"><img src="img/fontawesome/play.svg" alt="Play" class="menuIcon"/></button>
+			<button type="button" onclick="nextTrack()" class="btn btn-dark"><img src="img/fontawesome/angle-double-right.svg" alt="Next track" class="menuIcon"/></button>
 		</div>
 	</div>
 
@@ -98,8 +96,8 @@ function initPlaylist(){
 		localStorage.setItem('path', pathURL);
 		ajaxCallFiles();
 	});
-	$("[data-path]").prepend("<img class='icon' src='img/music.png' alt=''/>");
-	$("[data-directory]").prepend("<img class='icon' src='img/folder.png' alt=''/>");
+	$("[data-path]").prepend("<img class='icon' src='img/fontawesome/music.svg' alt=''/>");
+	$("[data-directory]").prepend("<img class='icon' src='img/fontawesome/folder.svg' alt=''/>");
 	if(playlist != ""){
 		selectionPlayTrackInFileList();
 	}
@@ -226,20 +224,20 @@ function selectTrack(idTrack){
 function playPause(){
 	audioPlayer.playPause();
 	if(audioPlayer.playing){
-		$(".playPauseBtn").html("<i class='fas fa-pause'></i>");
+		$(".playPauseBtn").html('<img src="img/fontawesome/pause.svg" alt="Pause" class="menuIcon"/>');
 	}else{
-		$(".playPauseBtn").html("<i class='fas fa-play'></i>");
+		$(".playPauseBtn").html('<img src="img/fontawesome/play.svg" alt="Play" class="menuIcon"/>');
 	}
 }
 
 function play(){
 	audioPlayer.play();
-	$(".playPauseBtn").html("<i class='fas fa-pause'></i>");
+	$(".playPauseBtn").html('<img src="img/fontawesome/pause.svg" alt="Pause" class="menuIcon"/>');
 }
 
 function pause(){
 	audioPlayer.pause();
-	$(".playPauseBtn").html("<i class='fas fa-play'></i>");
+	$(".playPauseBtn").html('<img src="img/fontawesome/play.svg" alt="Play" class="menuIcon"/>');
 }
 
 function selectionPlayTrackInFileList(){

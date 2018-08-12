@@ -21,12 +21,14 @@
 }
 .icon{
 	margin-right: 7px;
+	width: 14px;
 }
 .up{
 	height: 40px;
-	background-image: url("../img/arrow_up.png");
+	background-image: url("../img/fontawesome/arrow-up.svg");
 	background-repeat: space no-repeat;
 	background-position: center center;
+	background-size: 24px 17px;
 }
 .btn-track-info{
 	padding: 0 4px 4px;
@@ -71,4 +73,7 @@
 .searchItem{
 	padding-top: 0;
 	padding-bottom: 0;
+}
+.menuIcon{
+	width: 14px;
 }

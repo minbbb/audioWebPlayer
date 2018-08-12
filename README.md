@@ -17,12 +17,6 @@ How to install:
 5. Open the page and check
 6. Profit
 
-The project uses:
-* audio.js
-* Bootstrap v4.1.1
-* Font Awesome Free 5.1.1
-* jQuery v3.3.1
-
 ___________________
 
 audioWebPlayer
@@ -44,10 +38,5 @@ audioWebPlayer
 5. Открываем страницу и проверяем
 6. Profit
 
-В проекте используется:
-* audio.js
-* Bootstrap v4.1.1
-* Font Awesome Free 5.1.1
-* jQuery v3.3.1
-
-![alt-текст](https://github.com/minbbb/audioWebPlayer/blob/master/preview.png "Preview")
+# Screenshot
+![alt-текст](https://github.com/minbbb/audioWebPlayer/blob/master/screenshot.png "Screenshot")
