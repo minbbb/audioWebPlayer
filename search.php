@@ -1,6 +1,6 @@
 <?php
 
-$pathRoot = 'path/to/music/dir'; //root folder for music.
+$configs = include('config.php');
 $dir = $pathRoot.$_POST['path']; //active folder
 
 

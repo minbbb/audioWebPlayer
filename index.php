@@ -107,6 +107,9 @@ audiojs.events.ready(function() {
 	audioPlayer = audiojs.createAll({
 		trackEnded: function() {
 			nextTrack();
+		},
+		loadError: function() {
+			selectTrack(playId);
 		}
 	})[0];
 });

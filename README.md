@@ -12,10 +12,9 @@ How to install:
 ===================
 1. Download
 2. Copy to your website
-3. In the file "files.php" edit the variable "$pathRoot" to the path where the music is located. **Absolute path / points to / systems, not root of the site. Therefore, it works only with relative paths in the same directory as the script itself, or in the directories below**
-4. In the file "search.php" we edit the variable "$pathRoot" to the path where the music is located. **Absolute path / points to / systems, not root of the site. Therefore, it works only with relative paths in the same directory as the script itself, or in the directories below**
-5. Open the page and check
-6. Profit
+3. In the file "config.php" edit the variable "$pathRoot" to the path where the music is located. **Absolute path / points to / systems, not root of the site. Therefore, it works only with relative paths in the same directory as the script itself, or in the directories below**
+4. Open the page and check
+5. Profit
 
 ___________________
 
@@ -33,10 +32,9 @@ audioWebPlayer
 ===================
 1. Скачиваем
 2. Скопируйте на свой сайт
-3. В файле "files.php" правим переменную "$pathRoot" на путь где находится музыка. **Абсолютный путь / указывает на / системы, а не корень сайта. Поэтому, работает только с относительными путями и в той же директории что и сам скрипт, или в директориях ниже**
-4. В файле "search.php" правим переменную "$pathRoot" на путь где находится музыка. **Абсолютный путь / указывает на / системы, а не корень сайта. Поэтому, работает только с относительными путями и в той же директории что и сам скрипт, или в директориях ниже**
-5. Открываем страницу и проверяем
-6. Profit
+3. В файле "config.php" правим переменную "$pathRoot" на путь где находится музыка. **Абсолютный путь / указывает на / системы, а не корень сайта. Поэтому, работает только с относительными путями и в той же директории что и сам скрипт, или в директориях ниже**
+4. Открываем страницу и проверяем
+5. Profit
 
 # Screenshot
 ![alt-текст](https://github.com/minbbb/audioWebPlayer/blob/master/screenshot.png "Screenshot")
