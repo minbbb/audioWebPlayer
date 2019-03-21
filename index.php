@@ -19,7 +19,7 @@
 		<div class="playerBtns">
 			<button type="button" onclick="openMenu()" class="btn btn-dark menuBtn"><img src="img/fontawesome/ellipsis-h.svg" alt="Menu" class="menuIcon"/></button>
 			<button type="button" onclick="previousTrack()" class="btn btn-dark"><img src="img/fontawesome/angle-double-left.svg" alt="Previous track" class="menuIcon"/></button>
-			<button type="button" onclick="playPause()" class="btn btn-dark playPauseBtn"><img src="img/fontawesome/play.svg" alt="Play" class="menuIcon"/></button>
+			<button type="button" onclick="playPause()" class="btn btn-dark playPauseBtn"><img src="img/fontawesome/play.svg" alt="Play/Pause" class="menuIcon"/></button>
 			<button type="button" onclick="nextTrack()" class="btn btn-dark"><img src="img/fontawesome/angle-double-right.svg" alt="Next track" class="menuIcon"/></button>
 		</div>
 	</div>
@@ -58,6 +58,11 @@ var playId = 0; // id track in playlist
 var typeSort = "modifiedDate";
 var orderBy = "desc";
 var whatIsOpen = "fileManager";
+
+var picPlay = new Image();
+var picPause = new Image();
+picPlay.src = "img/fontawesome/play.svg";
+picPause.src = "img/fontawesome/pause.svg";
 
 function resizeWindow(){
 	$(".track-name-and-player").width($("#wrapper").width());
@@ -227,20 +232,20 @@ function selectTrack(idTrack){
 function playPause(){
 	audioPlayer.playPause();
 	if(audioPlayer.playing){
-		$(".playPauseBtn").html('<img src="img/fontawesome/pause.svg" alt="Pause" class="menuIcon"/>');
+		$(".playPauseBtn .menuIcon").attr("src", picPause.src);
 	}else{
-		$(".playPauseBtn").html('<img src="img/fontawesome/play.svg" alt="Play" class="menuIcon"/>');
+		$(".playPauseBtn .menuIcon").attr("src", picPlay.src);
 	}
 }
 
 function play(){
 	audioPlayer.play();
-	$(".playPauseBtn").html('<img src="img/fontawesome/pause.svg" alt="Pause" class="menuIcon"/>');
+	$(".playPauseBtn .menuIcon").attr("src", picPause.src);
 }
 
 function pause(){
 	audioPlayer.pause();
-	$(".playPauseBtn").html('<img src="img/fontawesome/play.svg" alt="Play" class="menuIcon"/>');
+	$(".playPauseBtn .menuIcon").attr("src", picPlay.src);
 }
 
 function selectionPlayTrackInFileList(){
